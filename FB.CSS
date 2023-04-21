@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Example</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="..>/layout_stylesheet.css"
+    />
+  </head>
+  <body id="flexbox-demo-bg">
+    <h1>Flexbox Example</h1>
+    <div class="flex-container">
+      <div class="flex-item" id="itemA">A</div>
+      <div class="flex-item" id="itemB">B</div>
+      <div class="flex-item">C</div>
+      <div class="flex-item">D</div>
+      <div class="flex-item">E</div>
+    </div>
+    <p>I just created my first flexbox.</p>
+    <a href=". > Homepage</a>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Example</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="..>/style/layout_stylesheet.css"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>Grid Example</h1>
+      <p>I just created my very first CSS Grid.</p>
+      <div class="grid-container">
+        <div class="grid-item" id="grid1">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+        <div class="grid-item">13</div>
+        <div class="grid-item">14</div>
+        <div class="grid-item">15</div>
+        <div class="grid-item">16</div>
+      </div>
+    </div>
+    <a href="..
+    x.html"> Homepage</a>
+  </body>
+</html>
+-------------
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: white;
+  color: black;
+}
+/* Styling Flexbox */
+#flexbox-demo-bg {
+  background-color: rgb(251, 243, 226);
+  color: rgb(17, 15, 15);
+}
+.flex-container {
+  height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: pink;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.flex-item {
+  color: aliceblue;
+  background-color: rgb(225, 0, 255);
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+#itemA {
+  height: 200px;
+}
+#itemB {
+  align-self: flex-end;
+  height: 100px;
+}
+/* Styling Grid */
+.grid-container {
+  display: grid;
+  /* grid-template-rows: repeat(4, 100px); */
+  /* grid-template-columns: 100px 100px 100px 100px; */
+  grid-template: repeat(4, 100px) / 100px 100px 100px 100px;
+  /* row-gap: 10px; */
+  /* column-gap: 20px; */
+  gap: 10px 40px;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: space-between;
+  background-color: rgb(251, 243, 226);
+  margin-bottom: 50px;
+  padding: 15px;
+  width: 500px;
+}
+.grid-item {
+  background-color: rgb(161, 161, 239);
+  color: white;
+  border: 3px solid rgb(80, 47, 80);
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+#grid1 {
+  /* grid-column-start: 2; */
+  /* grid-column-end: 4; */
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  /* justify-self: center;
+  align-self: center; */
+  place-self: center end;
+}
+@media screen and (min-width: 800px) {
+    body {
+      background-color: blue;
+    }
+  }
+  /* Styling Grid */
+.grid-container {
+    display: grid;
+    /* grid-template-rows: repeat(4, 100px); */
+    /* grid-template-columns: 100px 100px 100px 100px; */
+    grid-template: repeat(4, 100px) / 100px 100px 100px 100px;
+    /* row-gap: 10px; */
+    /* column-gap: 20px; */
+    gap: 10px 40px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-between;
+    background-color: rgb(251, 243, 226);
+    margin-bottom: 50px;
+    padding: 15px;
+    width: 500px;
+  }
+  .grid-item {
+    background-color: rgb(161, 161, 239);
+    color: white;
+    border: 3px solid rgb(80, 47, 80);
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+  }
+  #grid1 {
+    /* grid-column-start: 2; */
+    /* grid-column-end: 4; */
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    /* justify-self: center;
+    align-self: center; */
+    place-self: center end;
+  }

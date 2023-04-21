@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About myself</title>
+</head>
+<body>
+    
+</body>
+</html>
+<label for="password">Password:</label>
+<input aria-describedby="passwordrules" id="password" type="password" />
+<div hidden role="tooltip" id="passwordrules">
+  <p>
+      Password Rules:
+  </p>
+  <ul>
+    <li>Minimum of 8 characters</li>
+    <li>Include at least one lowercase letter, one uppercase letter, one number and one special character</li>
+    <li>Unique to this website</li>
+  </ul>
+</div>
+<ul class="tablist" role="tablist">
+    <li id="tab1" class="tab" role="tab" ...>Prices</li>
+    <li id="tab2" class="tab" role="tab" ...>Features </li>
+</ul>
+<div id="panel1" class="panel"  role="tabpanel" .... >
+    <h3 ....>Prices</h3> 
+    List of prices</div>  
+    <ul class="tablist" role="tablist">         
+        <li id="tab1" class="tab" aria-controls="panel1" role="tab" ...>Prices</li>         
+        <li id="tab2" class="tab" aria-controls="panel2" role="tab" ..>Features </li>         
+        </ul>      
+           
+        <div id="panel1" class="panel" aria-labelledby="tab1" role="tabpanel" ..>       
+        <h3 ..>Prices</h3>                   
+         List of prices      
+        </div> 
+             
+        <div id="panel2" class="panel" aria-labelledby="tab2" role="tabpanel" ..>        
+        <h3 ..>Features</h3>      
+        List of product features....          
+        </div> 
+        <style>
+       bodyz    
+        li[aria-selected='true'] {
+            color: black;
+            background-color: #fff;
+            border-bottom: 1px solid white;
+            }
+            
+            div[aria-hidden='true'] {
+            display: none;
+            }
+            
+        
+                
+<li>  id="tab1" class="tab" aria-controls="panel1" aria-selected="true" role="tab" tabindex="0"></li>
+Prices</li>
+<li id="tab2" class="tab" aria-controls="panel2" role="tab" aria-selected="false" tabindex="0">
+Features </li>
+</ul>
+
+
+<div id="panel1" class="panel" aria-labelledby="tab1" role="tabpanel" aria-hidden="false">
+<h3 tabindex="0">Prices</h3>
+List of prices
+</div>
+
+<div id="panel2" class="panel" aria-labelledby="tab2" role="tabpanel" aria-hidden="true">
+<h3 tabindex="0">Features</h3>
+List of product features....
+</div>
+
